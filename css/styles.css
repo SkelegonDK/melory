@@ -141,7 +141,7 @@ main {
 }
 
 #splash {
-  transform-style: preserve-3d;
+
   z-index: -1;
   visibility: hidden;
   display: flex;
@@ -152,7 +152,7 @@ main {
 }
 
 #splash h1 {
-  transform: translateZ(20px);
+
   font-size: 5rem;
   margin: 20px;
   /* text-shadow:
