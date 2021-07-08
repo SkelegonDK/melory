@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Melory</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+    </head>
+
+    <body>
+        <section id="board" class="wdw">
+            <div id="timer">
+                <h1>Time</h1>
+                <div>
+                    <label id="minutes">00</label>:<label id="seconds">00</label>
+                </div>
+            </div>
+            <div id="level-container">
+                <h1>Level</h1>
+                <p id="level-label"></p>
+            </div>
+        </section>
+        <section data-tilt id="splash" class="wdw">
+            <h1>MELORY</h1>
+            <button id="startGame" aria-label="start game" onclick="startGame()" class="button menuBtn">Start Game</button>
+            <span data-tilt></span>
+            <!-- <div id="logo" data-tilt>
+                <img src="skelegon.jpg" alt="skelegon logo">
+
+            </div> -->
+
+        </section>
+        <section id="selectLevel" class="wdw">
+            <h1 id="selectLabel">Select level</h1>
+            <div id="levelContainer">
+                <button id="easy" aria-label="select easy" onclick="selectLevel(1)" class="menuBtn button neonText">Easy</button>
+                <button id="medium" aria-label="select medium" onclick="selectLevel(2)" class="menuBtn button neonText">Medium</button>
+                <button id="hard" aria-label="select hard" onclick="selectLevel(3)" class="menuBtn button neonText">Hard</button>
+            </div>
+        </section>
+        <main id="gameGrid"></main>
+        <template>
+            <button onclick="buttonPressed(this)" data='' class="button btn-size-small">
+        </template>
+        <section id="show-score">
+            <h1 id="gameScore"></h1>
+            <p id="gameTime"></p>
+            <p id="gameTries"></p>
+            <button onclick="startGame()" aria-label="try again" class="menuBtn button neonText">Try again</button>
+        </section>
+        <script preload src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.26/Tone.js"></script>
+        <script src="main.js"></script>
+
+    </body>
+
+</html>
